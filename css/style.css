@@ -9,6 +9,14 @@ footer {
   background-color: #000000;
 }
 
+main{
+  padding-top: 70px;
+}
+
+h3.somos{
+  color: white;
+}
+
 /*Seteo para nav bar*/
 .nav-container {
   position: fixed;
