@@ -40,7 +40,7 @@ footer {
   z-index: 10;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .Media-player {
     bottom: 0;
     right: 0;
@@ -86,12 +86,11 @@ footer {
   }
 }
 
-/*Seteo para la sección de la descripción de la página*/
+/*Seteo para la sección del texto descriptivo*/
 .description-section {
   padding: 20px;
+  text-align: center;
   background-color: #212529;
-  margin: 20px;
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .description-section h2 {
@@ -103,14 +102,14 @@ footer {
 }
 @media (max-width: 768px) {
   .description-section {
-      margin: 10px;
-      padding: 15px;
+    margin: 10px;
+    padding: 15px;
   }
 }
 @media (max-width: 480px) {
   .description-section {
-      margin: 5px;
-      padding: 10px;
+    margin: 5px;
+    padding: 10px;
   }
 }
 
