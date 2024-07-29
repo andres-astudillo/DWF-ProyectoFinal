@@ -2,6 +2,7 @@
 body,
 header,
 main,
+section,
 footer {
   font-family: "Oswald", sans-serif;
   padding-top: 0px;
@@ -34,9 +35,6 @@ footer {
   right: 0;
   height: 150px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: 10;
 }
 
