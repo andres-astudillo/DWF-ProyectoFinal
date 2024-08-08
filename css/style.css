@@ -9,11 +9,11 @@ footer {
   background-color: #000000;
 }
 
-main{
+main {
   padding-top: 70px;
 }
 
-h3.somos{
+h3.somos {
   color: white;
 }
 
@@ -42,15 +42,7 @@ h3.somos{
   bottom: 0;
   right: 0;
   height: 150px;
-
   z-index: 10;
-}
-
-@media only screen and (max-width: 768px) {
-  .Media-player {
-    bottom: 0;
-    right: 0;
-  }
 }
 
 /*Seteo para la sección con las tarjetas*/
@@ -86,11 +78,6 @@ h3.somos{
 .card-text {
   color: #212529;
 }
-@media (max-width: 768px) {
-  .card {
-    width: 100%;
-  }
-}
 
 /*Seteo para la sección del texto descriptivo*/
 .description-section {
@@ -105,18 +92,6 @@ h3.somos{
 }
 .description-section p {
   color: #ffff;
-}
-@media (max-width: 768px) {
-  .description-section {
-    margin: 10px;
-    padding: 15px;
-  }
-}
-@media (max-width: 480px) {
-  .description-section {
-    margin: 5px;
-    padding: 10px;
-  }
 }
 
 /*Seteo para la sección del footer*/
@@ -153,11 +128,6 @@ footer {
   color: white;
   text-decoration: none;
   font-size: 20px;
-}
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
 }
 
 /* Tarjetas en programacion*/
@@ -201,12 +171,6 @@ footer {
 .card-image-program {
   width: 100%;
   height: auto;
-}
-
-@media (max-width: 768px) {
-  .card-programacion {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Formulario de contacto*/
@@ -267,12 +231,6 @@ button:hover {
   color: white;
 }
 
-@media (max-width: 768px) {
-  .contact-form {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Sección sobre nosotros*/
 .about-section {
   display: grid;
@@ -308,6 +266,50 @@ button:hover {
 
 @media (max-width: 768px) {
   .about-section {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .description-section {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .description-section {
+    margin: 5px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Media-player {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-programacion {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
   }
 }
