@@ -72,11 +72,12 @@ h3.somos {
   padding: 20px;
 }
 .card-title {
+  color: #ffff;
   font-size: 1.5em;
   margin: 0 0 10px;
 }
 .card-text {
-  color: #212529;
+  color: #ffff;
 }
 
 /*Seteo para la sección del texto descriptivo*/
@@ -268,48 +269,31 @@ button:hover {
   .about-section {
     grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 768px) {
   .description-section {
     margin: 10px;
     padding: 15px;
   }
-}
-@media (max-width: 480px) {
-  .description-section {
-    margin: 5px;
-    padding: 10px;
+  .footer-container {
+    flex-direction: column;
   }
-}
-
-@media only screen and (max-width: 768px) {
   .Media-player {
     bottom: 0;
     right: 0;
   }
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
   .contact-form {
     grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 768px) {
   .card-programacion {
     grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 768px) {
   .card {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .description-section {
+    margin: 5px;
+    padding: 10px;
   }
 }
