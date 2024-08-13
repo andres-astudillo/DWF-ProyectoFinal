@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Seteo para todo*/
 body,
 header,
@@ -10,12 +9,14 @@ footer {
   background-color: #000000;
 }
 
+@import "pagestyles/variables.scss";
+
 main {
   padding-top: 70px;
 }
 
 h3.somos {
-  color: white;
+  color: $colour-text;
 }
 
 /*Seteo para nav bar*/
@@ -33,8 +34,8 @@ h3.somos {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-style: italic;
-  color: white;
-  background-color: #212529;
+  color: $colour-text;
+  background-color: $colour-bg;
 }
 
 /*Seteo para el reproductor de la radio*/
@@ -53,9 +54,8 @@ h3.somos {
   justify-content: center;
   padding: 20px;
 }
-
 .card {
-  background-color: #212529;
+  background-color: $colour-bg;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -66,52 +66,45 @@ h3.somos {
 .card:hover {
   transform: scale(1.05);
 }
-
 .card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
 }
-
 .card-content {
   padding: 20px;
 }
-
 .card-title {
-  color: white;
+  color: $colour-text;
   font-size: 1.5em;
   margin: 0 0 10px;
 }
-
 .card-text {
-  color: white;
+  color: $colour-text;
 }
 
 /*Seteo para la sección del texto descriptivo*/
 .description-section {
   padding: 20px;
   text-align: center;
-  background-color: #212529;
+  background-color: $colour-bg;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .description-section h2 {
-  color: white;
+  color: $colour-text;
   margin-top: 0;
 }
-
 .description-section p {
-  color: white;
+  color: $colour-text;
 }
 
 /*Seteo para la sección del footer*/
 footer {
-  background-color: #212529;
-  color: white;
+  background-color: $colour-bg;
+  color: $colour-text;
   padding: 20px 0;
   text-align: center;
 }
-
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -120,28 +113,23 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .footer-section {
   flex: 1;
   margin: 10px;
 }
-
 .footer-section h3 {
   margin-bottom: 15px;
 }
-
 .social-icons {
   list-style: none;
   padding: 0;
 }
-
 .social-icons li {
   display: inline;
   margin: 0 10px;
 }
-
 .social-icons a {
-  color: white;
+  color: $colour-text;
   text-decoration: none;
   font-size: 20px;
 }
@@ -157,15 +145,15 @@ footer {
 .card-programacion {
   display: flex;
   flex-direction: column;
-  background-color: #212529;
+  background-color: $colour-bg;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .card-time-program {
-  background-color: #212529;
-  color: white;
+  background-color: $colour-bg;
+  color: $colour-text;
   padding: 10px;
   text-align: center;
   font-weight: bold;
@@ -176,12 +164,12 @@ footer {
 }
 
 .card-title-program {
-  color: white;
+  color: $colour-text;
   margin: 0 0 10px;
 }
 
 .card-description-program {
-  color: white;
+  color: $colour-text;
 }
 
 .card-image-program {
@@ -194,13 +182,13 @@ footer {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #212529;
+  background-color: $colour-bg;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section h2 {
-  color: white;
+  color: $colour-text;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -217,7 +205,7 @@ footer {
 }
 
 .form-group label {
-  color: white;
+  color: $colour-text;
   margin-bottom: 5px;
 }
 
@@ -235,16 +223,16 @@ footer {
 button {
   grid-column: span 2;
   padding: 10px;
-  background-color: #212529;
-  color: white;
+  background-color: $colour-bg;
+  color: $colour-text;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #212529;
-  color: white;
+  background-color: $colour-bg;
+  color: $colour-text;
 }
 
 /* Sección sobre nosotros*/
@@ -255,7 +243,7 @@ button:hover {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #212529;
+  background-color: $colour-bg;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -277,7 +265,7 @@ button:hover {
 }
 
 .about-content p {
-  color: white;
+  color: $colour-text;
 }
 
 @media (max-width: 768px) {
@@ -305,11 +293,10 @@ button:hover {
     width: 100%;
   }
 }
+
 @media (max-width: 480px) {
   .description-section {
     margin: 5px;
     padding: 10px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
