@@ -6,7 +6,7 @@ header,
 main,
 section,
 footer {
-  font-family: "Oswald", sans-serif;
+  @include font-default;
   padding-top: 0px;
   background-color: black;
 }
