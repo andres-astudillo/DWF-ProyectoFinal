@@ -1,2 +1,6 @@
 $colour-text:  #ffff;
 $colour-bg: #212529;
+
+@mixin font-default{
+    font-family: "Oswald", sans-serif;
+}

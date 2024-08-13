@@ -7,7 +7,7 @@ section,
 footer {
   font-family: "Oswald", sans-serif;
   padding-top: 0px;
-  background-color: #000000;
+  background-color: black;
 }
 
 main {
@@ -78,12 +78,14 @@ h3.somos {
 }
 
 .card-title {
+  font-family: "Oswald", sans-serif;
   color: white;
   font-size: 1.5em;
   margin: 0 0 10px;
 }
 
 .card-text {
+  font-family: "Oswald", sans-serif;
   color: white;
 }
 
@@ -96,11 +98,13 @@ h3.somos {
 }
 
 .description-section h2 {
+  font-family: "Oswald", sans-serif;
   color: white;
   margin-top: 0;
 }
 
 .description-section p {
+  font-family: "Oswald", sans-serif;
   color: white;
 }
 
@@ -127,6 +131,7 @@ footer {
 }
 
 .footer-section h3 {
+  font-family: "Oswald", sans-serif;
   margin-bottom: 15px;
 }
 
@@ -141,6 +146,7 @@ footer {
 }
 
 .social-icons a {
+  font-family: "Oswald", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -164,6 +170,7 @@ footer {
 }
 
 .card-time-program {
+  font-family: "Oswald", sans-serif;
   background-color: #212529;
   color: white;
   padding: 10px;
@@ -176,11 +183,13 @@ footer {
 }
 
 .card-title-program {
+  font-family: "Oswald", sans-serif;
   color: white;
   margin: 0 0 10px;
 }
 
 .card-description-program {
+  font-family: "Oswald", sans-serif;
   color: white;
 }
 
@@ -200,6 +209,7 @@ footer {
 }
 
 .contact-section h2 {
+  font-family: "Oswald", sans-serif;
   color: white;
   text-align: center;
   margin-bottom: 20px;
@@ -217,6 +227,7 @@ footer {
 }
 
 .form-group label {
+  font-family: "Oswald", sans-serif;
   color: white;
   margin-bottom: 5px;
 }
@@ -229,6 +240,7 @@ footer {
 }
 
 .form-group textarea {
+  font-family: "Oswald", sans-serif;
   resize: vertical;
 }
 
@@ -273,10 +285,12 @@ button:hover {
 }
 
 .about-content h2 {
+  font-family: "Oswald", sans-serif;
   margin-top: 0;
 }
 
 .about-content p {
+  font-family: "Oswald", sans-serif;
   color: white;
 }
 
