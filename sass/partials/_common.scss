@@ -1,0 +1,67 @@
+@import "../utils/variables.scss";
+
+/*Seteo para todo*/
+body,
+header,
+main,
+section,
+footer {
+  @include font-default;
+  padding-top: 0px;
+  background-color: black;
+}
+
+main {
+  padding-top: 70px;
+}
+
+/*Seteo para la sección del footer*/
+footer {
+  background-color: $colour-bg;
+  color: $colour-text;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+.footer-section h3 {
+  @include font-default;
+  margin-bottom: 15px;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+.social-icons li {
+  display: inline;
+  margin: 0 10px;
+}
+.social-icons a {
+  @include font-default;
+  color: $colour-text;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+h3.somos {
+  color: $colour-text;
+}
+
+/*Seteo para h1*/
+.title-h1 {
+  @include font-default;
+  font-optical-sizing: auto;
+  font-style: italic;
+  color: $colour-text;
+  background-color: $colour-bg;
+}

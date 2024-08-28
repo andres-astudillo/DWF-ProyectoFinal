@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .about-section {
+      grid-template-columns: 1fr;
+    }
+    .description-section {
+      margin: 10px;
+      padding: 15px;
+    }
+    .footer-container {
+      flex-direction: column;
+    }
+    .Media-player {
+      bottom: 0;
+      right: 0;
+    }
+    .contact-form {
+      grid-template-columns: 1fr;
+    }
+    .card-programacion {
+      grid-template-columns: 1fr;
+    }
+    .card {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .description-section {
+      margin: 5px;
+      padding: 10px;
+    }
+  }

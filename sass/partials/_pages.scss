@@ -1,117 +1,6 @@
-@charset "UTF-8";
-/*Seteo para todo*/
-body,
-header,
-main,
-section,
-footer {
-  font-family: "Oswald", sans-serif;
-  padding-top: 0px;
-  background-color: black;
-}
+@import "../utils/variables.scss";
+@import "../utils/breakpoints.scss";
 
-main {
-  padding-top: 70px;
-}
-
-/*Seteo para la sección del footer*/
-footer {
-  background-color: #212529;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-section {
-  flex: 1;
-  margin: 10px;
-}
-
-.footer-section h3 {
-  font-family: "Oswald", sans-serif;
-  margin-bottom: 15px;
-}
-
-.social-icons {
-  list-style: none;
-  padding: 0;
-}
-
-.social-icons li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.social-icons a {
-  font-family: "Oswald", sans-serif;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-h3.somos {
-  color: white;
-}
-
-/*Seteo para h1*/
-.title-h1 {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-style: italic;
-  color: white;
-  background-color: #212529;
-}
-
-/*Seteo para nav bar*/
-.nav-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  z-index: 1000;
-}
-
-@media (max-width: 768px) {
-  .about-section {
-    grid-template-columns: 1fr;
-  }
-  .description-section {
-    margin: 10px;
-    padding: 15px;
-  }
-  .footer-container {
-    flex-direction: column;
-  }
-  .Media-player {
-    bottom: 0;
-    right: 0;
-  }
-  .contact-form {
-    grid-template-columns: 1fr;
-  }
-  .card-programacion {
-    grid-template-columns: 1fr;
-  }
-  .card {
-    width: 100%;
-  }
-}
-@media (max-width: 480px) {
-  .description-section {
-    margin: 5px;
-    padding: 10px;
-  }
-}
 /*Seteo para el reproductor de la radio*/
 .Media-player {
   position: fixed;
@@ -128,9 +17,8 @@ h3.somos {
   justify-content: center;
   padding: 20px;
 }
-
 .card {
-  background-color: #212529;
+  background-color: $colour-bg;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -141,46 +29,40 @@ h3.somos {
 .card:hover {
   transform: scale(1.05);
 }
-
 .card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
 }
-
 .card-content {
   padding: 20px;
 }
-
 .card-title {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  @include font-default;
+  color: $colour-text;
   font-size: 1.5em;
   margin: 0 0 10px;
 }
-
 .card-text {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  @include font-default;
+  color: $colour-text;
 }
 
 /*Seteo para la sección del texto descriptivo*/
 .description-section {
   padding: 20px;
   text-align: center;
-  background-color: #212529;
+  background-color: $colour-bg;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .description-section h2 {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  @include font-default;
+  color: $colour-text;
   margin-top: 0;
 }
-
 .description-section p {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  @include font-default;
+  color: $colour-text;
 }
 
 /* Tarjetas en programacion*/
@@ -194,16 +76,16 @@ h3.somos {
 .card-programacion {
   display: flex;
   flex-direction: column;
-  background-color: #212529;
+  background-color: $colour-bg;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .card-time-program {
-  font-family: "Oswald", sans-serif;
-  background-color: #212529;
-  color: white;
+  @include font-default;
+  background-color: $colour-bg;
+  color: $colour-text;
   padding: 10px;
   text-align: center;
   font-weight: bold;
@@ -214,14 +96,14 @@ h3.somos {
 }
 
 .card-title-program {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  @include font-default;
+  color: $colour-text;
   margin: 0 0 10px;
 }
 
 .card-description-program {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  @include font-default;
+  color: $colour-text;
 }
 
 .card-image-program {
@@ -234,14 +116,14 @@ h3.somos {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #212529;
+  background-color: $colour-bg;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section h2 {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  @include font-default;
+  color: $colour-text;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -258,8 +140,8 @@ h3.somos {
 }
 
 .form-group label {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  @include font-default;
+  color: $colour-text;
   margin-bottom: 5px;
 }
 
@@ -271,23 +153,23 @@ h3.somos {
 }
 
 .form-group textarea {
-  font-family: "Oswald", sans-serif;
+  @include font-default;
   resize: vertical;
 }
 
 button {
   grid-column: span 2;
   padding: 10px;
-  background-color: #212529;
-  color: white;
+  background-color: $colour-bg;
+  color: $colour-text;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #212529;
-  color: white;
+  background-color: $colour-bg;
+  color: $colour-text;
 }
 
 /* Sección sobre nosotros*/
@@ -298,7 +180,7 @@ button:hover {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #212529;
+  background-color: $colour-bg;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -316,13 +198,11 @@ button:hover {
 }
 
 .about-content h2 {
-  font-family: "Oswald", sans-serif;
+  @include font-default;
   margin-top: 0;
 }
 
 .about-content p {
-  font-family: "Oswald", sans-serif;
-  color: white;
+  @include font-default;
+  color: $colour-text;
 }
-
-/*# sourceMappingURL=style.css.map */
